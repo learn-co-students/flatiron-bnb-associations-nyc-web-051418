@@ -1,4 +1,7 @@
 require 'rails_helper'
+require_relative '../../app/models/listing'
+require_relative '../../app/models/reservation'
+require_relative '../../app/models/review'
 
 describe User do
   let(:katie) { User.create(name: "Katie") }
