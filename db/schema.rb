@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 7) do
+ActiveRecord::Schema.define(version: 8) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,11 @@ ActiveRecord::Schema.define(version: 7) do
   create_table "listings", force: :cascade do |t|
     t.integer "host_id"
     t.integer "neighborhood_id"
+    t.string  "description"
+    t.string  "address"
+    t.string  "title"
+    t.integer "price"
+    t.string  "listing_type"
   end
 
   create_table "neighborhoods", force: :cascade do |t|
