@@ -1,6 +1,6 @@
 class CreateNeighborhood < ActiveRecord::Migration
   def change
-    create_table :neighborhood do |t|
+    create_table :neighborhoods do |t|
       t.string :name
     end
   end
