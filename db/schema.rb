@@ -18,13 +18,13 @@ ActiveRecord::Schema.define(version: 10) do
   end
 
   create_table "listings", force: :cascade do |t|
-    t.integer "host_id"
     t.integer "neighborhood_id"
     t.string  "description"
     t.string  "address"
     t.string  "title"
     t.integer "price"
     t.string  "listing_type"
+    t.integer "host_id"
   end
 
   create_table "neighborhoods", force: :cascade do |t|
