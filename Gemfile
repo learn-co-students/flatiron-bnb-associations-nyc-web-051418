@@ -26,7 +26,7 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+  gem 'sinatra-activerecord'
 group :development, :test do
   gem "rspec-rails"
   gem "capybara"
@@ -39,4 +39,5 @@ group :development, :test do
   gem "sqlite3"
   gem "pry"
   gem 'rack_session_access'
+  gem 'sinatra-activerecord'
 end
